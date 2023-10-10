@@ -44,13 +44,9 @@ def get_completion_from_messages(messages, model="gpt-4", temperature=0):
 
 
 def gpt_response(text):
-    if not text.startswith("Pp"):
-        return text
-    else:
-        text = text[2:]
-        messages =  [{'role':'assistant', 'content':text} ]
-        assistant_response = get_completion_from_messages(messages, temperature=1)
-        return "\n"+assistant_response
+    messages =  [{'role':'assistant', 'content':text} ]
+    assistant_response = get_completion_from_messages(messages, temperature=1)
+    return "\n"+assistant_response
     
 
 
