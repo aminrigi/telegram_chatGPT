@@ -1,4 +1,5 @@
 # Telegram ChatGPT Chatbot
+A quick and dirty telegram chatGPT4 bot. 
 
 ## Prerequisites
 To run the Telegram ChatGPT chatbot, ensure you have a Telegram bot and a paid OpenAI account.
